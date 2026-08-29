@@ -3,7 +3,7 @@ markdown# 🎯 Glassmorphic Number Guesser
 A beautiful, responsive web-based number guessing game featuring a modern **Glassmorphism** user interface, interactive visual animations, and clean state logic.
 
 ## 🚀 Live Demo
-▶️ [Click here to play the game live!](YOUR_GITHUB_PAGES_LINK_HERE)
+▶️ [Click here to play the game live!]( https://mohit-mehta-dev12.github.io/Number-Guessing-Game/)
 
 ## ✨ Features
 * **Frosted Glass UI**: Clean glassmorphism container using backdrop-filter blur effects.
