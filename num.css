@@ -1,0 +1,191 @@
+   html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            /* Cool dark ambient background with centralized glass light shade */
+            background: radial-gradient(circle at center, #1a2f3b 0%, #111416 70%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        #wrapper {
+            box-sizing: border-box;
+            text-align: center;
+            width: 450px;
+            min-height: 590px;
+            color: #fff;
+            font-size: 24px;
+            border-radius: 24px;
+            padding: 10px 0 25px 0;
+            
+            /* Professional Glassmorphism styling configuration */
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4), 
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        h1 {
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            font-size: 26px;
+            letter-spacing: 2px;
+            border-radius: 24px 24px 0 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.75);
+            margin: 15px 25px;
+            line-height: 1.5;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        #guess {
+            font-size: 20px;
+            font-weight: 600;
+            color: #00cbd6;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        #guessField {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.3);
+            width: 160px;
+            height: 55px;
+            font-size: 32px;
+            border-style: none;
+            margin-top: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 14px;
+            text-align: center;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #guessField:focus {
+            border-color: #00cbd6;
+            background: rgba(0, 0, 0, 0.45);
+            box-shadow: 0 0 20px rgba(0, 203, 214, 0.3);
+        }
+
+        #subt {
+            background-color: #00cbd6;
+            color: #111;
+            font-weight: 700;
+            width: 200px;
+            height: 48px;
+            border-radius: 12px;
+            font-size: 16px;
+            border-style: none;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 203, 214, 0.25);
+        }
+
+        #subt:hover {
+            background-color: #00e5f2;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 203, 214, 0.4);
+        }
+
+        #subt:active {
+            transform: translateY(1px);
+        }
+
+        .resultParas {
+            margin-top: 25px;
+            padding: 0 30px;
+        }
+
+        .resultParas p {
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding-bottom: 12px;
+            margin: 12px 0;
+        }
+
+        .guesses {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 15px;
+            max-width: 200px;
+            word-wrap: break-word;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .lastResult {
+            color: #00cbd6;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .lowOrHi h2 {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Specialized Restart Game Button Elements */
+        .restart-btn {
+            background: linear-gradient(135deg, #ff4f45 0%, #dd2c22 100%);
+            color: #fff;
+            width: 240px;
+            height: 48px;
+            border-radius: 24px;
+            font-size: 16px;
+            font-weight: 700;
+            border-style: none;
+            margin-top: 15px;
+            cursor: pointer; /* Enforced clear interactive hand cursor */
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 6px 20px rgba(255, 59, 48, 0.3);
+            letter-spacing: 0.5px;
+        }
+
+        .restart-btn:hover {
+            transform: scale(1.06);
+            box-shadow: 0 10px 25px rgba(255, 59, 48, 0.45);
+        }
+
+        .restart-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Hiding numeric tracking layout wheels */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
